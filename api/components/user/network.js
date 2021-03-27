@@ -1,11 +1,15 @@
+// trabaja con la capa de red
+
 const express = require('express');
 
 const response = require('../../../network/response');
+const Controller = require('./controller')
+
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    // res.send('Todo funciona');
-    response.success(req, res, 'Todo piola guacho', 200);
+    const lista = Controller.lista();
+    response.success(req, res, lista, 200);
 })
 
 module.exports = router;
