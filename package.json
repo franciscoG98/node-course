@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/franciscoG98/node-course#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nanoid": "^3.1.22",
+    "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
